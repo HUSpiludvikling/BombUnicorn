@@ -692,10 +692,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 2
-  cloudProjectId: a5def444-f6a9-46bf-ada8-ea2009cef7eb
+  cloudProjectId: 803322b8-6157-4d90-a410-a7712369926f
   framebufferDepthMemorylessMode: 0
-  projectName: 2d test
-  organizationId: jasminrasmussen3004
+  projectName: UnicornBomb
+  organizationId: teamunicorn
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
