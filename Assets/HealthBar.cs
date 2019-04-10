@@ -13,7 +13,7 @@ public class HealthBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        damageable = transform.parent.GetComponentInParent<Damageable>();
+        damageable = GetComponentInParent<Damageable>();
         
     }
 
@@ -25,6 +25,7 @@ public class HealthBar : MonoBehaviour
 
     private void UpdateLocalScale()
     {
-        transform.localScale = new Vector3(damageable.CurrentHealth / damageable.startingHealth, transform.localScale.y, transform.localScale.z);
+        float ratio = Mathf.Clamp((float)damageable.CurrentHealth / (float)damageable.startingHealth, 0.01f, 0.98f);
+        transform.localScale = new Vector3( ratio, transform.localScale.y, transform.localScale.z);
     }
 }
