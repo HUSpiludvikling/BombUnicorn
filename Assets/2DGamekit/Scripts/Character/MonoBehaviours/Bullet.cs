@@ -75,7 +75,7 @@ namespace Gamekit2D
 
             TileBase surfaceHit = PhysicsHelper.FindTileForOverride(collider, transform.position, forward);
 
-            VFXController.Instance.Trigger(VFX_HASH, transform.position, 0, m_SpriteRenderer.flipX, null, surfaceHit);
+            //VFXController.Instance.Trigger(VFX_HASH, transform.position, 0, m_SpriteRenderer.flipX, null, surfaceHit);
         }
     }
 }

@@ -769,7 +769,7 @@ namespace Gamekit2D
             footstepAudioPlayer.PlayRandomSound(m_CurrentSurface);
             var footstepPosition = transform.position;
             footstepPosition.z -= 1;
-            VFXController.Instance.Trigger("DustPuff", footstepPosition, 0, false, null, m_CurrentSurface);
+            //VFXController.Instance.Trigger("DustPuff", footstepPosition, 0, false, null, m_CurrentSurface);
         }
 
         public void Respawn(bool resetHealth, bool useCheckpoint)
