@@ -29,11 +29,12 @@ namespace Gamekit2D
         {
             m_SpriteRenderer = GetComponent<SpriteRenderer>();
             m_Timer = 0.0f;
+            mainCamera = Camera.main;
         }
 
         public void ReturnToPool ()
         {
-            bulletPoolObject.ReturnToPool ();
+            //bulletPoolObject.ReturnToPool ();
         }
 
         void FixedUpdate ()
@@ -45,7 +46,8 @@ namespace Gamekit2D
                                 screenPoint.x < 1 + k_OffScreenError && screenPoint.y > -k_OffScreenError &&
                                 screenPoint.y < 1 + k_OffScreenError;
                 if (!onScreen)
-                    bulletPoolObject.ReturnToPool();
+                    Destroy(gameObject);
+                    //bulletPoolObject.ReturnToPool();
             }
 
             if (timeBeforeAutodestruct > 0)

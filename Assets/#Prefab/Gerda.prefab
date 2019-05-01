@@ -710,6 +710,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1567967645905842, guid: 4593cdd83a432764aac5e418b812b3e0, type: 3}
   FireKey: 104
+  facingRight: 1
+  speed: 10
 --- !u!1 &1181578502863468
 GameObject:
   m_ObjectHideFlags: 0

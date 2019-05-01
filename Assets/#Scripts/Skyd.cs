@@ -9,6 +9,9 @@ public class Skyd : MonoBehaviour
     [SerializeField] bool facingRight = true;
     SpriteRenderer playerSR;
 
+    [Range(1.0f,10.0f)]
+    public float speed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +29,8 @@ public class Skyd : MonoBehaviour
             GameObject temp;
 
             temp = Instantiate(Bullet, transform.position + (facingRight ? Vector3.right : Vector3.left) + Vector3.up, Quaternion.identity);
-            temp.GetComponent<Rigidbody2D>().AddForce((facingRight ? Vector2.right : Vector2.left), ForceMode2D.Impulse);  
+            temp.GetComponent<Rigidbody2D>().AddForce((facingRight ? Vector2.right : Vector2.left) * speed, ForceMode2D.Impulse);
+            Destroy(temp, 5f);
         }
     }
 }
