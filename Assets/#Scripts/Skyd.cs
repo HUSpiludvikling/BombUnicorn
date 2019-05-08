@@ -9,8 +9,8 @@ public class Skyd : MonoBehaviour
     [SerializeField] bool facingRight = true;
     SpriteRenderer playerSR;
 
-    [Range(1.0f,10.0f)]
-    public float speed;
+
+    private float speed =9f;
 
     // Start is called before the first frame update
     void Start()
