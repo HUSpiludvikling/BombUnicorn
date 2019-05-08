@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 2142996410}
   m_Layer: 13
   m_Name: Gerda
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -709,9 +709,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1567967645905842, guid: 4593cdd83a432764aac5e418b812b3e0, type: 3}
-  FireKey: 104
+  FireKey: 102
   facingRight: 1
-  speed: 10
 --- !u!1 &1181578502863468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,7 +1740,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.7647059, b: 0.93020684, a: 1}
+  m_Color: {r: 1, g: 0.88640976, b: 0.7647059, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 101.8

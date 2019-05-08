@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/#Scene/Spil/Scene 3.unity
     guid: 2b3276f03de411b45b243eb1c3d52e64
+  - enabled: 1
+    path: Assets/#Scene/Spil/win scene.unity
+    guid: 0039806c191fd2649b283e32342da699
   m_configObjects: {}
