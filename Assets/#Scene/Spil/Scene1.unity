@@ -312,10 +312,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gerda
       objectReference: {fileID: 0}
-    - target: {fileID: 1125256590603436, guid: c212380104e215d46bc10629fcacb4bc, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 4212235226361802, guid: c212380104e215d46bc10629fcacb4bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.95
